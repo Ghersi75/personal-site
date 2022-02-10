@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #1f2833;
+
+}
+
+li {
+    
+    margin-right: 10px;
+    list-style-type: none;
+    display: inline;
+    padding: 10px 0px;
+    border-radius: 50px;
+    background-color: #1f2833;
+}
+
+li:hover {
+    outline: solid #66fcf1 2px;
+    filter: brightness(1.2);
+}
+
+a {
+    color: #66fcf1;
+    padding: 10px 20px;
+    text-decoration: none;
+}
