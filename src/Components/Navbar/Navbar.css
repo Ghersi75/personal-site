@@ -7,8 +7,8 @@ ul {
     justify-content: right;
     align-items: center;
     padding: 15px 10px;
-    background-color: #1f2833;
-
+    /* Fancy gradient lol */
+    background: linear-gradient(1deg, rgba(31,40,51,1) 0%, rgba(11,12,16,1) 100%);
 }
 
 li {
