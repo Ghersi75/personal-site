@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Button.css";
 
 export default function Button(props) {
     const [count, setCount] = useState(0);
@@ -15,7 +16,7 @@ export default function Button(props) {
 
     return(
         <div>
-            <p>Count {count}</p>
+            <h1>Count {count}</h1>
             <button onClick={handleIncreaseButton}>+1</button>
             <button onClick={handleDecreaseButton}>-1</button>
         </div>

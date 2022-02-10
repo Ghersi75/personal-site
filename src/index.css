@@ -1,0 +1,6 @@
+/* Color palette used: number 12 from https://visme.co/blog/website-color-schemes/ */
+
+:root {
+    --main-bg-color: #1f2833;
+    background-color: var(--main-bg-color);
+}
