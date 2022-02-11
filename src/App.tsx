@@ -6,10 +6,8 @@ export default function App() {
     return(
         <>
             <div className="wrapper">
+                <div className="hero"> </div>
                 <Navbar />
-                <div className="hero">
-
-                </div>
             </div>
         </>
     );

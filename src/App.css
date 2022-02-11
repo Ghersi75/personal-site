@@ -1,6 +1,7 @@
 @import "./utils/vars.css";
 
 .wrapper {
+    position: relative;
     width: 100vw;
     /* 200 vh basically makes the size double whatever the viewport height is, thus extending the page down */
     height: 200vh;
@@ -9,6 +10,9 @@
 }
 
 .hero {
+    position: absolute;
+    top: 0;
+    right: 0;
     background-image: url("./images/hero.jpg");
     background-size: 100% auto;
     width: 100vw;
