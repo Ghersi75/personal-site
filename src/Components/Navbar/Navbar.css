@@ -1,33 +1,61 @@
+@import "../../utils/vars.css";
+:root {
+    --color: #000;
+}
+
 * {
     margin: 0;
 }
 
 ul {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: right;
     align-items: center;
     padding: 15px 10px;
-    /* Fancy gradient lol */
-    background: linear-gradient(1deg, rgba(31,40,51,1) 0%, rgba(11,12,16,1) 100%);
+    /* background: linear-gradient(1deg, rgba(31,40,51,1) 0%, rgba(11,12,16,1) 100%); */
+    background: rgba(var(--main-bg-rgb), .6);
 }
 
 li {
-    
-    margin-right: 10px;
+    /* margin-right: 10px; */
     list-style-type: none;
     display: inline;
-    padding: 10px 0px;
-    border-radius: 50px;
-    background-color: #1f2833;
+    padding: 10px 20px;
+    font-size: x-large;
+    /* border-radius: 50px; */
+    /* background-color: #1f2833; */
 }
 
-li:hover {
-    outline: solid #66fcf1 2px;
-    filter: brightness(1.2);
+/* Below transition underlines starting left on hover and goes to right after hover */
+.underline {
+    display: inline-block;
+    padding-bottom: .25rem;
+    position: relative;
+}
+
+.underline::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-text);
+    /* ease in-out starts slow, goes fast and ends slow */
+    transition: width .35s ease-in-out;
+}
+
+.underline:hover::before {
+    width: 100%;
+    left: 0;
+    /* right: auto; */
 }
 
 a {
-    color: #66fcf1;
-    padding: 10px 20px;
+    color: var(--main-text);
+    /* padding: 10px 20px; */
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }

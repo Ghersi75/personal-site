@@ -1,0 +1,23 @@
+/* 
+    Components that use these numbers but not vars for one reason or another:
+    - Navbar: main-bg-color for ul sticky bg bc rgba doesnt work with vars
+*/
+
+:root {
+    --main-bg: #0b0c10;
+    --secondary-bg: #1f2833;
+    --light-grey: #c5c6c7;
+    --main-text: #66fcf1;
+    --secondary-text: #45a29e;
+
+    --main-bg-rgb: 11, 12, 16;
+    --secondary-bg-rgb: 31, 40, 51;
+    --light-grey-rgb: 197, 198, 199;
+    --main-text-rgb: 102, 252, 241;
+    --secondary-text-rgb: 69, 162, 158;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+}

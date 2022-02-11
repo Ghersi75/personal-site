@@ -1,0 +1,19 @@
+@import "./utils/vars.css";
+
+.wrapper {
+    width: 100vw;
+    /* 200 vh basically makes the size double whatever the viewport height is, thus extending the page down */
+    height: 200vh;
+    background-color: var(--main-bg);
+    
+}
+
+.hero {
+    background-image: url("./images/hero.jpg");
+    background-size: 100% auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
