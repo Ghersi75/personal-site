@@ -35,7 +35,7 @@ li {
     position: relative;
 }
 
-.underline::before {
+.underline::before  {
     content: "";
     position: absolute;
     right: 0;

@@ -4,7 +4,7 @@
     position: relative;
     width: 100vw;
     /* 200 vh basically makes the size double whatever the viewport height is, thus extending the page down */
-    height: 200vh;
+    height: 100vh;
     background-color: var(--main-bg);
     
 }
@@ -14,10 +14,20 @@
     top: 0;
     right: 0;
     background-image: url("./images/hero.jpg");
-    background-size: 100% auto;
-    width: 100vw;
-    height: 100vh;
+    background-color: white;
+    background-size: 1920px 1080px;
+    background-position: 64% 70%;
+    /* Site relative to parent which is 100vw x 100vh, so image will take at most viewport size */
+    width: 100%;
+    height: 100%;
     display: flex;
     /* align-items: center; */
     justify-content: center;
+}
+
+.hero h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
