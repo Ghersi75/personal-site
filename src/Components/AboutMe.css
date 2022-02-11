@@ -1,0 +1,6 @@
+@import "../utils/vars.css";
+
+.about-me-wrapper {
+    height: 200vh;
+    background-color: white;
+}   

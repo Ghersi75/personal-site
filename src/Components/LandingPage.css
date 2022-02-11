@@ -6,6 +6,7 @@
     /* 200 vh basically makes the size double whatever the viewport height is, thus extending the page down */
     height: 100vh;
     background-color: var(--main-bg);
+    z-index: -1;
     
 }
 

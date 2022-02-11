@@ -21,7 +21,6 @@ export default function LandingPage() {
     return (
         <div className="wrapper">
             <div className="hero"><h1>Width: {width}</h1></div>
-            <Navbar />
         </div>
     )
 }

@@ -8,8 +8,9 @@
 }
 
 ul {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     display: flex;
     justify-content: right;
     align-items: center;
