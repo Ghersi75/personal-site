@@ -1,6 +1,29 @@
 @import "../utils/vars.css";
 
 .about-me-wrapper {
-    height: 200vh;
-    background-color: white;
-}   
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--main-bg);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.grid-item {
+    background-color: var(--secondary-bg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
