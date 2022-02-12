@@ -12,14 +12,13 @@ export default function AboutMe() {
         setIsShown(false);
     }
 
-
     return (
         <div className="about-me-wrapper">
-            <div className="grid-item" onMouseEnter={handleOnHover} onMouseLeave={handleOffHover}>
+            <div className="grid-item one" onMouseEnter={handleOnHover} onMouseLeave={handleOffHover}>
                 1
                 {isShown && <div><button> Live demo </button> <button> Source Code </button></div>}
             </div>
-            <div className="grid-item">
+            <div className="grid-item two">
                 2
             </div>
         </div>
