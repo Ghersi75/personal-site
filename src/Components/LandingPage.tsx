@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar";
-import Navbar from "./Navbar";
 import "./LandingPage.css";
 
 export default function LandingPage() {
