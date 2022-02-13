@@ -7,6 +7,7 @@ export default function LandingPage() {
 
     const handleResize = () => {
         setWidth(window.innerWidth);
+        console.log(width);
     }
 
     useEffect(() => {
