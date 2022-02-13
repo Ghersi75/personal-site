@@ -1,6 +1,6 @@
 @import "../utils/vars.css";
 
-.wrapper {
+.hero-wrapper {
     position: relative;
     width: 100vw;
     /* 200 vh basically makes the size double whatever the viewport height is, thus extending the page down */
@@ -11,24 +11,50 @@
 }
 
 .hero {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-image: url("../images/hero.jpg");
-    background-color: white;
+    /* Resize background to correct ratio */
     background-size: 1920px 1080px;
+    /* Move background around to look good when page is resized */
     background-position: 64% 70%;
-    /* Site relative to parent which is 100vw x 100vh, so image will take at most viewport size */
-    width: 100%;
-    height: 100%;
+    /* Make landing page size viewport size */
+    width: 100vw;
+    height: 100vh;
+    /* Flex to properly center things on it */
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
+    /* Move hero image to background */
+    z-index: -1;
 }
 
-.hero h1 {
+.hero-details-wrapper {
+    /* Grid to properly line up header and text under it */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    outline: solid white 2px;
+    height: 30vh;
+    width: 40vw;
+}
+
+.hero-details {
+    color: var(--main-text);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    /* font-size: 60px; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1.hero-details {
+    font-size: 60px;
+}
+
+p.hero-details {
+    font-size: 30px;
+    /* outline: solid white 5px; */
+}
+
+ul.hero-details {
+    outline: solid white 2px;
 }

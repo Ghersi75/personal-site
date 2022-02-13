@@ -18,8 +18,18 @@ export default function LandingPage() {
     }, []);
 
     return (
-        <div className="wrapper">
-            <div className="hero"><h1>Width: {width}</h1></div>
+        <div className="hero-wrapper">
+            <div className="hero">
+                <div className="hero-details-wrapper">
+                    <h1 className="hero-details">Ghersi Doci</h1>
+                    <p className="hero-details">CSE major at UConn</p>
+                    <ul className="hero-details hero-icons">
+                        <li>Github</li>
+                        <li>LinkedIn</li>
+                        <li>Email</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@
     margin: 0;
 }
 
-ul {
+ul.navbar {
     position: fixed;
     top: 0;
     width: 100%;
