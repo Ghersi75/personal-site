@@ -3,12 +3,14 @@
     - Navbar: main-bg-color for ul sticky bg bc rgba doesnt work with vars
 */
 
+/* Change theme to https://hookagency.com/blog/website-color-schemes/ number 4 */
+
 :root {
-    --main-bg: #0b0c10;
-    --secondary-bg: #1f2833;
-    --light-grey: #c5c6c7;
-    --main-text: #66fcf1;
-    --secondary-text: #45a29e;
+    --main-bg: #12232E;
+    --secondary-bg: #007CC7;
+    --ligher-secondary-bg: #007CC7;
+    --main-text: #EEFBFB;
+    --secondary-text: #203647;
 
     --main-bg-rgb: 11, 12, 16;
     --secondary-bg-rgb: 31, 40, 51;
@@ -18,6 +20,6 @@
 }
 
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+    font-family: 'Lato', sans-serif;
+    src: url("../fonts/Lato/Lato-Regular.ttf"), format("truetype");
 }

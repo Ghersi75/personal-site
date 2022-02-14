@@ -12,11 +12,12 @@ ul.navbar {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding: 15px 10px;
     /* background: linear-gradient(1deg, rgba(31,40,51,1) 0%, rgba(11,12,16,1) 100%); */
     /* background: rgba(var(--main-bg-rgb), .6); */
+    z-index: 1;
 }
 
 li {
@@ -57,6 +58,6 @@ li {
 a {
     color: var(--main-text);
     /* padding: 10px 20px; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
 }

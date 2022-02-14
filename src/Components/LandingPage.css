@@ -6,7 +6,7 @@
     /* 200 vh basically makes the size double whatever the viewport height is, thus extending the page down */
     height: 100vh;
     background-color: var(--main-bg);
-    z-index: -1;
+    /* z-index: -1; */
     
 }
 
@@ -30,9 +30,9 @@
 .hero-details-wrapper {
     /* Grid to properly line up header and text under it */
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    outline: solid white 2px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* outline: solid white 2px; */
     height: 30vh;
     width: 40vw;
 }
@@ -41,20 +41,36 @@
     color: var(--main-text);
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* font-size: 60px; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
 }
 
 h1.hero-details {
+    align-items: flex-end;
     font-size: 60px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 p.hero-details {
     font-size: 30px;
-    /* outline: solid white 5px; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-ul.hero-details {
-    outline: solid white 2px;
+div.hero-details.icons {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /* outline: solid white 2px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    /* height: 80px; */
+    /* width: 20%; */
 }
