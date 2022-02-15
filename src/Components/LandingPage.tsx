@@ -4,7 +4,11 @@ import "./LandingPage.css";
 import LinkedIn from "../iconComponents/LinkedIn";
 import Github from "../iconComponents/Github";
 
-export default function LandingPage() {
+interface Props {
+    ref?: React.RefObject<HTMLInputElement>
+}
+
+export default function LandingPage(props: Props) {
     const [width, setWidth] = useState(window.innerWidth);
 
     const handleResize = () => {
@@ -21,7 +25,7 @@ export default function LandingPage() {
     }, []);
 
     return (
-        <div className="hero-wrapper">
+        <div className="hero-wrapper" ref={props.ref}>
             <div className="hero">
                 <div className="hero-details-wrapper">
                     <h1 className="hero-details">Ghersi Doci</h1>

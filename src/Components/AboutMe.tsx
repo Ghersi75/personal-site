@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./AboutMe.css";
 
-export default function AboutMe() {
+interface Props {
+    ref?: React.RefObject<HTMLInputElement>
+}
+
+export default function AboutMe(props: Props) {
     const [isShown, setIsShown] = useState(false);
 
     const handleOnHover = () => {
@@ -13,7 +17,7 @@ export default function AboutMe() {
     }
 
     return (
-        <div className="about-me-wrapper">
+        <div className="about-me-wrapper" ref={props.ref}>
             <div className="grid-item one" onMouseEnter={handleOnHover} onMouseLeave={handleOffHover}>
                 1
                 {isShown && <div><button> Live demo </button> <button> Source Code </button></div>}

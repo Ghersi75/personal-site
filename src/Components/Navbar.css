@@ -20,12 +20,17 @@ ul.navbar {
     z-index: 1;
 }
 
-li {
+li.navbar {
     /* margin-right: 10px; */
     list-style-type: none;
     display: inline;
     padding: 10px 20px;
     font-size: x-large;
+    color: var(--main-text);
+    /* padding: 10px 20px; */
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
     /* border-radius: 50px; */
     /* background-color: #1f2833; */
 }
@@ -53,11 +58,4 @@ li {
     width: 100%;
     left: 0;
     /* right: auto; */
-}
-
-a {
-    color: var(--main-text);
-    /* padding: 10px 20px; */
-    font-family: 'Lato', sans-serif;
-    text-decoration: none;
 }
