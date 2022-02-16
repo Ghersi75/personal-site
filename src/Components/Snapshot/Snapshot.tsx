@@ -1,5 +1,4 @@
 import React, { useState, FormEvent } from "react";
-import Navbar from "../Navbar/Navbar";
 import "./Snapshot.css";
 
 export default function Snapshot() {

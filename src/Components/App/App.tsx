@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./App.css";
 import LandingPage from "../LandingPage/LandingPage";
 import Navbar from "../Navbar/Navbar";
