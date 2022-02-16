@@ -13,7 +13,7 @@ export default function Snapshot() {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="snapshot-wrapper">
                 <form className="snapshot" onSubmit={handleSubmit}>
                     <label className="snapshot" htmlFor="address">Enter contract address: </label>
