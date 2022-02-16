@@ -1,7 +1,7 @@
-@import "../utils/vars.css";
+@import "../../utils/vars.css";
 
 :root {
-    --hero: url("../images/hero.jpg");
+    --hero: url("../../images/hero.jpg");
 }
 
 .hero-wrapper {

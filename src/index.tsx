@@ -5,7 +5,7 @@ import {
   Routes,
   Route
 } from "react-router-dom"
-import App from "./App";
+import App from "./Components/App/App";
 import Snapshot from './Components/Snapshot/Snapshot';
 import "./index.css";
 

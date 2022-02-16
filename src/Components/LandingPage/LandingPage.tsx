@@ -1,8 +1,7 @@
 import React from "react";
-import "./Navbar";
 import "./LandingPage.css";
-import LinkedIn from "../iconComponents/LinkedIn";
-import Github from "../iconComponents/Github";
+import LinkedIn from "../../iconComponents/LinkedIn";
+import Github from "../../iconComponents/Github";
 
 interface Props {
     ref?: React.RefObject<HTMLInputElement>

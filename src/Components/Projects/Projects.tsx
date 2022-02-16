@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectsPage.css";
+import "./Projects.css";
 
 export default function ProjectsPage() {
     return (
