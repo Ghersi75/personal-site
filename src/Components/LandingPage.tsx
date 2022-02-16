@@ -16,8 +16,8 @@ export default function LandingPage(props: Props) {
                     <h1 className="hero-details">Ghersi Doci</h1>
                     <p className="hero-details">CSE student at UConn</p>
                     <div className="hero-details icons"> 
-                        <a href="https://github.com/Ghersi75" target="_blank" rel="noreferrer noopener"> <Github /> </a>
-                        <a href="https://www.linkedin.com/in/ghersi-doci-695839211/" target="_blank" rel="noreferrer noopener"> <LinkedIn /> </a>
+                        <a href="https://github.com/Ghersi75" target="_blank" rel="noreferrer noopener" className="hero-link"> <Github /> </a>
+                        <a href="https://www.linkedin.com/in/ghersi-doci-695839211/" target="_blank" rel="noreferrer noopener" className="hero-link"> <LinkedIn /> </a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,9 @@
 @import "../utils/vars.css";
 
+:root {
+    --hero: url("../images/hero.jpg");
+}
+
 .hero-wrapper {
     position: relative;
     width: 100vw;
@@ -11,7 +15,7 @@
 }
 
 .hero {
-    background-image: url("../images/hero.jpg");
+    background-image: var(--hero);
     /* Resize background to correct ratio */
     background-size: 1920px 1080px;
     /* Move background around to look good when page is resized */
@@ -73,4 +77,16 @@ div.hero-details.icons {
     align-items: top;
     /* height: 80px; */
     /* width: 20%; */
+}
+
+.hero-link {
+    /* Scale height to fit icons */
+    height: 50px;
+}
+
+/* Just testing this out */
+@media only screen and (max-width: 1000px) {
+    .hero {
+        background: black;
+    }
 }

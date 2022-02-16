@@ -1,0 +1,39 @@
+@import "../utils/vars.css";
+
+.about-wrapper {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--main-bg);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.about-text-wrapper {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text-wrapper.left, .about-text-wrapper.right {
+    grid-row: 1;
+}
+
+.about-text-wrapper.left {
+    clip-path: polygon(0 0, 100% 0, 67% 100%, 0 100%);
+    background-color: var(--main-bg);
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.about-text-wrapper.right {
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: var(--secondary-bg);
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.about-text {
+    font-size: 60px;
+}

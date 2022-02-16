@@ -73,6 +73,7 @@ input.snapshot.submit {
     margin: auto;
 
     border-color: var(--secondary-text);
+    cursor: pointer;
 }
 
 p.snapshot {
