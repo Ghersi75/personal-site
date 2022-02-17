@@ -86,7 +86,21 @@ div.hero-details.icons {
 
 /* Just testing this out */
 @media only screen and (max-width: 1000px) {
-    .hero {
-        background: black;
+    .hero-details.icons {
+        grid-column-start: 1 !important;
+        grid-column-end: 4 !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1.hero-details {
+        font-size: 40px !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+
+    p.hero-details {
+        font-size: 25px !important;
     }
 }
