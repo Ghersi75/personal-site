@@ -118,6 +118,7 @@
 }
 
 @media only screen and (max-width: 975px) {
+
     .about-text-wrapper {
         clip-path: none !important;
         height: auto !important;
@@ -139,25 +140,13 @@
     }
 
     .about-text {
-        margin-top: 15%;
-        margin-bottom: 15%;
+        margin-block: 15%;
+        margin-bottom: 10%;
         position: inherit;
-        height: 80vh;
-        width: 50vw;
+        height: auto;
+        width: 60vw;
         display: grid;
     }
-
-    /* .about-h1 {
-        font-size: calc(50px * 1.1) !important;
-    }
-
-    .about-h2 {
-        font-size: calc(35px * 1.1) !important;
-    }
-
-    .about-p {
-        font-size: calc(24px * 1.1) !important;
-    } */
 }
 
 @media only screen and (max-width: 600px) { 
