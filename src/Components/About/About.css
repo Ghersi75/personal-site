@@ -118,10 +118,6 @@
 }
 
 @media only screen and (max-width: 975px) {
-    .about-wrapper {
-        /* height: 200vh; */
-    }
-
     .about-text-wrapper {
         clip-path: none !important;
         height: auto !important;
