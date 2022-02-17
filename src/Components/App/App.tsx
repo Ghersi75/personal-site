@@ -3,7 +3,7 @@ import "./App.css";
 import LandingPage from "../LandingPage/LandingPage";
 import Navbar from "../Navbar/Navbar";
 import About from "../About/About";
-import Projects from "../Projects/Projects";
+// import Projects from "../Projects/Projects";
 
 export default function App() {
     // const pageRefs = useRef({
@@ -18,7 +18,7 @@ export default function App() {
             <Navbar />
             <LandingPage />
             <About />
-            <Projects />
+            {/* <Projects /> */}
         </>
     );
 }

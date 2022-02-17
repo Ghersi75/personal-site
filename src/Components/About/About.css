@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
 }
 
 .about-text-wrapper {
@@ -120,12 +119,12 @@
 
 @media only screen and (max-width: 975px) {
     .about-wrapper {
-        height: 200vh;
+        /* height: 200vh; */
     }
 
     .about-text-wrapper {
         clip-path: none !important;
-        height: 100vh !important;
+        height: auto !important;
         width: 100vw !important;
     }
 
@@ -144,6 +143,8 @@
     }
 
     .about-text {
+        margin-top: 15%;
+        margin-bottom: 15%;
         position: inherit;
         height: 80vh;
         width: 50vw;
