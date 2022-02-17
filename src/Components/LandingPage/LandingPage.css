@@ -89,15 +89,17 @@ div.hero-details.icons {
     .hero-details.icons {
         grid-column-start: 1 !important;
         grid-column-end: 4 !important;
+        justify-content: space-evenly !important;
     }
 }
 
 @media only screen and (max-width: 800px) {
+    .hero-details {
+        text-align: center;
+    }
+
     h1.hero-details {
         font-size: 40px !important;
-        justify-content: center !important;
-        align-items: center !important;
-
     }
 
     p.hero-details {
